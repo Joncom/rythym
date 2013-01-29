@@ -4,29 +4,29 @@ ig.module('game.entities.bar-manager')
 
 .defines(function() {
 
-	EntityBarManager = ig.Entity.extend({
+    EntityBarManager = ig.Entity.extend({
 
-		bars: [],
+        bars: [],
 
-		init: function(x, y, settings) {
+        init: function(x, y, settings) {
 
-			this.parent(x, y, settings);
-		},
+            this.parent(x, y, settings);
+        },
 
-		update: function() {},
+        update: function() {},
 
-		// Add bar(s).
-		add: function(n) {
+        // Add bar(s).
+        add: function(n) {
 
-			var quantity = ( typeof n === 'number' ? n : 1 );
+            var quantity = ( typeof n === 'number' ? n : 1 );
 
-			for( var i=0; i<quantity; i++ ) {
+            for( var i=0; i<quantity; i++ ) {
 
-				this.bars.push(ig.game.spawnEntity(EntityBar));
+                this.bars.push(ig.game.spawnEntity(EntityBar));
 
-			}
-		},
+            }
+        },
 
-	});
+    });
 
 });

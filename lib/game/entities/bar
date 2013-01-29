@@ -4,15 +4,15 @@ ig.module('game.entities.bar')
 
 .defines(function() {
 
-	EntityBar = ig.Entity.extend({
+    EntityBar = ig.Entity.extend({
 
-		init: function(x, y, settings) {
+        init: function(x, y, settings) {
 
-			this.parent(x, y, settings);
-		},
+            this.parent(x, y, settings);
+        },
 
-		update: function() {}
+        update: function() {}
 
-	});
+    });
 
 });
